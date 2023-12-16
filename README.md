@@ -1,6 +1,18 @@
 # Countries-API
 This Project uses RestCountries Live APIs to fetch list of all countries. We can also search countries by their name. This project also lets the user fetch list of countries on basis of filters based on area and population and display the result in a sorted and paged view.
 
+
+This project has been made using IDE IntelliJ Idea and can be run on other IDEs like sts, eclipse as well. Just download the project and run using your IDE.
+
+Steps to run the project:
+
+1) Run the Authorization API with username : "Prashant" or "Nitish" and password : "abcd". Provide the username and password in the curl request data. A JSON web token would be generated. 
+
+2) Copy the token and paste it in Authorization of curl requests of other APIs. Be careful to put the token after "Bearer ".
+
+3) Hit the APIs with the generated token. The values in data and url path-variables can be changed for getting different responses. 
+
+
 Authorization API: 
 curl --location 'localhost:8080/auth/login' \
 --header 'Content-Type: application/json' \
