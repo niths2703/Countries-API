@@ -13,10 +13,10 @@ Steps to run the project:
 3) Hit the APIs with the generated token. The values in data and url path-variables can be changed for getting different responses. 
 
 
-APIS:
+**APIS:**
 
 
-Authorization API: localhost:8080/auth/login
+**Authorization API: localhost:8080/auth/login**
 
 curl --location 'localhost:8080/auth/login' \
 --header 'Content-Type: application/json' \
@@ -27,7 +27,7 @@ curl --location 'localhost:8080/auth/login' \
 
 
 
-API Countries - List by Filter based on area and population ( localhost:8080/countries/filter/{sort}/{page}/{size}  ):
+**API Countries - List by Filter based on area and population ( localhost:8080/countries/filter/{sort}/{page}/{size}  ):**
 
 curl --location 'localhost:8080/countries/filter/desc/1/2' \
 --header 'Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwcmFzaGFudCIsImlhdCI6MTcwMjY5ODA4MSwiZXhwIjoxNzAyNzE2MDgxfQ.QkRC5Yn4Z2wjmVOvXk30Mm_Qr7GkGK0vEoMDvR4-2ZX6XbLjGpy_eHGsOdHCVQygNW704zcm-EWTSVsaAR5Bag' \
@@ -44,14 +44,14 @@ curl --location 'localhost:8080/countries/filter/desc/1/2' \
 
 
 
-API Countries List by name :  (localhost:8080/countries/{name}  ):
+**API Countries List by name :  (localhost:8080/countries/{name}  ):**
 
 curl --location 'localhost:8080/countries/Estonia' \
 --header 'Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwcmFzaGFudCIsImlhdCI6MTcwMjcwODUxNSwiZXhwIjoxNzAyNzI2NTE1fQ.VuKAqs64c7MLNpm5PJlEykxuMhM9CP0YY95iAsFv6scFlQ6j5aFAQmm8a0ipdwMEZo_uQtHwuz-XyWM5lHRvlA'
 
 
 
-API - Get All Countries List : ( localhost:8080/countries  ):
+**API - Get All Countries List : ( localhost:8080/countries  ):**
 
 curl --location --request GET 'localhost:8080/countries' \
 --header 'Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJuaXRpc2giLCJpYXQiOjE3MDI0NjY3NDUsImV4cCI6MTcwMjQ4NDc0NX0.XKdPqOLS7YVhIelqd3gqPqHOCVGFoTrVncLUVnhPzgH_hrjHJNAjQr9_IM91NBvNEJN-sEr-3feCuqicXKZ-ag' \
