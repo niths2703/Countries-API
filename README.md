@@ -26,6 +26,7 @@ curl --location 'localhost:8080/auth/login' \
 }'
 
 
+
 API Countries - List by Filter based on area and population ( localhost:8080/countries/filter/{sort}/{page}/{size}  ):
 
 curl --location 'localhost:8080/countries/filter/desc/1/2' \
@@ -42,10 +43,12 @@ curl --location 'localhost:8080/countries/filter/desc/1/2' \
 
 
 
+
 API Countries List by name :  (localhost:8080/countries/{name}  ):
 
 curl --location 'localhost:8080/countries/Estonia' \
 --header 'Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwcmFzaGFudCIsImlhdCI6MTcwMjcwODUxNSwiZXhwIjoxNzAyNzI2NTE1fQ.VuKAqs64c7MLNpm5PJlEykxuMhM9CP0YY95iAsFv6scFlQ6j5aFAQmm8a0ipdwMEZo_uQtHwuz-XyWM5lHRvlA'
+
 
 
 API - Get All Countries List : ( localhost:8080/countries  ):
