@@ -29,6 +29,9 @@ curl --location 'localhost:8080/auth/login' \
 
 **API Countries - List by Filter based on area and population ( localhost:8080/countries/filter/{sort}/{page}/{size}  ):**
 
+For sorting in reverse order pass "desc" in place of {sort}. You will also need to specify the page number and size of object each page will contain in {page} and {size} respectively.
+
+
 curl --location 'localhost:8080/countries/filter/desc/1/2' \
 --header 'Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwcmFzaGFudCIsImlhdCI6MTcwMjY5ODA4MSwiZXhwIjoxNzAyNzE2MDgxfQ.QkRC5Yn4Z2wjmVOvXk30Mm_Qr7GkGK0vEoMDvR4-2ZX6XbLjGpy_eHGsOdHCVQygNW704zcm-EWTSVsaAR5Bag' \
 --header 'Content-Type: application/json' \
@@ -45,6 +48,8 @@ curl --location 'localhost:8080/countries/filter/desc/1/2' \
 
 
 **API Countries List by name :  (localhost:8080/countries/{name}  ):**
+
+Pass the country name in place of {name} in url.
 
 curl --location 'localhost:8080/countries/Estonia' \
 --header 'Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwcmFzaGFudCIsImlhdCI6MTcwMjcwODUxNSwiZXhwIjoxNzAyNzI2NTE1fQ.VuKAqs64c7MLNpm5PJlEykxuMhM9CP0YY95iAsFv6scFlQ6j5aFAQmm8a0ipdwMEZo_uQtHwuz-XyWM5lHRvlA'
